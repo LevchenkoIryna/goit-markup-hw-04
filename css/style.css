@@ -8,6 +8,7 @@
   --bcg-color-gray: #f5f4fa;
   --total-black: #000000;
   --link-color: rgba(255, 255, 255, 0.6);
+  --socials-icons-body: #AFB1B8;
 }
 
 body {
@@ -138,6 +139,20 @@ section {
 /* Hero */
 
 .hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
   background-color: var(--bcg-color-dark);
   text-align: center;
   padding: 0;
@@ -268,6 +283,31 @@ section {
   line-height: 1.19;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--socials-icons-body);
+
+}
+
+.socials-link:hover,
+.socials-link:focus{
+  background-color: var(--accent-color);
+  fill: var(--basic-white-color);
 }
 
 /* Footer */
