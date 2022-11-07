@@ -78,6 +78,12 @@ section {
 .header {
   display: flex;
   align-items: center;
+}
+
+.header-border {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 2px solid var(--bcg-color-gray);
 }
 
@@ -567,6 +573,7 @@ section {
 }
 
 .example-title {
+  color: var(--basic-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
