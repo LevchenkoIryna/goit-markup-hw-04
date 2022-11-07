@@ -225,6 +225,7 @@ section {
 
 .feature-title {
   font-weight: 700;
+  font-size: 14px;
 }
 
 .feature-text {
@@ -232,13 +233,6 @@ section {
   line-height: 1.71;
   width: 270px;
   margin-top: 10px;
-}
-
-.feature-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
 }
 
 .icon-feature {
@@ -249,11 +243,9 @@ section {
   background-color: var(--bcg-color-gray);
   border-radius: 4px;
   width: 270px;
+  height: 120px;
   margin-bottom: 30px;
-}
-
-.feature-svg {
-  margin: 25px 100px;
+  gap: 30px;
 }
 
 /* Work */
@@ -337,10 +329,16 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   color: var(--socials-icons-body);
+}
+
+.socials-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
 }
 
 .socials-icon {
@@ -363,7 +361,12 @@ section {
 }
 
 .client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--socials-icons-body);
+  width: 100%;
+  height: 100%;
 }
 
 .client-link:hover,
@@ -373,14 +376,11 @@ section {
 
 .client-icon {
   fill: currentColor;
-  margin: 16px 32px;
 }
 
 .client-border {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 170px;
+  height: 92px;
   border: 1px solid var(--socials-icons-body);
   border-radius: 4px;
 }
@@ -452,12 +452,17 @@ section {
   width: 231px;
 }
 
+.footer-block {
+  width: 44px;
+  height: 44px;
+}
+
 .footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   color: var(--basic-white-color);
   background: rgba(255, 255, 255, 0.1);
@@ -502,7 +507,11 @@ section {
   height: auto;
 }
 
-.example-box:hover {
+.example-link {
+  display: block;
+  list-style: none;
+}
+.example-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -562,12 +571,14 @@ section {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  list-style: none;
 }
 
 .example-text {
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 30px;
+  list-style: none;
 }
 
 .visually-hidden {
